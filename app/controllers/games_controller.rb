@@ -1,7 +1,7 @@
 class GamesController < ApplicationController
 
   def create
-
+    
   end
 
   def show
@@ -19,7 +19,7 @@ class GamesController < ApplicationController
   private
 
   def game_params
-    params.permit()
+    params.permit(state: [])
   end
 
 end
